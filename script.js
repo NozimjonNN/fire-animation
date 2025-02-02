@@ -5,6 +5,7 @@ const sizeButtons = document.querySelector('.size-buttons');
 const toggleButton = document.querySelector('.toggle-button');
 const controls = document.querySelector('.controls');
 const fireContainer = document.querySelector('.fire-container');
+const fireSound = document.querySelector('#fire-sound')
 
 fireSound.play().catch(error => {
     console.log("Автовоспроизведение звука заблокировано. Пользователь должен взаимодействовать с страницей.");
@@ -121,7 +122,7 @@ document.querySelectorAll('.size-button').forEach(button => {
 // Скрытие/показа кнопок
 toggleButton.addEventListener('click', () => {
     controls.classList.toggle('hidden');
-    toggleButton.textContent = controls.classList.contains('hidden') ? 'on' : 'off';
+    toggleButton.textContent = controls.classList.contains('hidden') ? '👁️' : '👁️';
 });
 
 // По умолчанию устанавливаем жёлтый цвет и средний размер
