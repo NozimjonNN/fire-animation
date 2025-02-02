@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Огонь с изменением цвета</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fire-container">
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="sparks"></div>
+    </div>
+
+    <div class="color-buttons">
+        <button class="color-button" data-color="yellow" style="background-color: yellow;"></button>
+        <button class="color-button" data-color="blue" style="background-color: #00aaff;"></button>
+        <button class="color-button" data-color="emerald" style="background-color: #50c878;"></button>
+        <button class="color-button" data-color="white" style="background-color: white;"></button>
+        <button class="color-button" data-color="purple" style="background-color: #800080;"></button>
+        <button class="color-button" data-color="pink" style="background-color: #ff69b4;"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Огонь с изменением цвета и размера</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fire-container">
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+    </div>
+
+    <div class="controls">
+        <div class="color-buttons">
+            <button class="color-button" data-color="yellow" style="background-color: yellow;"></button>
+            <button class="color-button" data-color="blue" style="background-color: #00aaff;"></button>
+            <button class="color-button" data-color="emerald" style="background-color: #50c878;"></button>
+            <button class="color-button" data-color="white" style="background-color: white;"></button>
+            <button class="color-button" data-color="purple" style="background-color: #800080;"></button>
+            <button class="color-button" data-color="pink" style="background-color: #ff69b4;"></button>
+            <button class="color-button" data-color="red" style="background-color: #ff0000;"></button>
+            <button class="color-button" data-color="orange" style="background-color: #ffa500;"></button>
+            <button class="color-button" data-color="gray-blue" style="background-image: linear-gradient(0deg, #808080, #4682b4);"></button>
+            <button class="color-button" data-color="sky-pink" style="background-image: linear-gradient(0deg, #87ceeb, #ff1493);"></button>
+            <button class="color-button lavender" data-color="lavender-pink" style="background-image: linear-gradient(0deg, #e6e6fa, #ff69b4);"></button>
+            <button class="color-button green-yellow" data-color="green-yellow" style="background-image: linear-gradient(0deg, #32cd32, #ffeb3b);"></button>
+        </div>
+
+        <div class="size-buttons">
+            <button class="size-button" data-size="small">Маленький</button>
+            <button class="size-button" data-size="medium">Средний</button>
+            <button class="size-button" data-size="large">Большой</button>
+            <button class="size-button" data-size="extra">Гигантский</button>
+            <button class="size-button" data-size="ultra">Ультра-гигантский</button>
+        </div>
+    </div>
+
+    <button class="toggle-button">👁️</button>
+
+    <audio id="fire-sound" loop autoplay>
+        <source src="./fire.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
